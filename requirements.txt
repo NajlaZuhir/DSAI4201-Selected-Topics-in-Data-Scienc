@@ -1,0 +1,8 @@
+streamlit
+faiss-cpu
+mistralai
+requests
+beautifulsoup4
+numpy
+
+# api_key = "ARLdxpcNkIeHOh4tXid2uS0aH9NNKPBd" 
