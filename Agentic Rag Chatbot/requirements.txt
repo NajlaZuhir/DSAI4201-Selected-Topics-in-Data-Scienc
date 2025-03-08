@@ -6,13 +6,10 @@ streamlit
 openai
 python-dotenv
 
-# RAG Document Processing & LLM Integration (used in get_detailed_response)
+# RAG Document Processing & LLM Integration
 llama-index
-llama-index-llms-mistralai
-llama-index-embeddings-mistralai
-llama-index-embeddings-huggingface
 
-# Optional Machine Learning Utilities (if using additional intent classification features)
+# Optional ML Utilities
 scikit-learn
 sentence-transformers
 nltk
