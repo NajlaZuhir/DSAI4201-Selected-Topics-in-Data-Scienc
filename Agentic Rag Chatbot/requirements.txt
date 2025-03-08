@@ -1,0 +1,16 @@
+# Core dependencies
+requests
+beautifulsoup4
+fpdf
+streamlit
+
+# RAG Document Processing & LLM Integration (used in get_detailed_response)
+llama-index
+llama-index-llms-mistralai
+llama-index-embeddings-mistralai
+llama-index-embeddings-huggingface
+
+# Optional Machine Learning Utilities (if using additional intent classification features)
+# scikit-learn
+# sentence-transformers
+# nltk
