@@ -3,6 +3,8 @@ requests
 beautifulsoup4
 fpdf
 streamlit
+openai
+python-dotenv
 
 # RAG Document Processing & LLM Integration (used in get_detailed_response)
 llama-index
@@ -11,6 +13,6 @@ llama-index-embeddings-mistralai
 llama-index-embeddings-huggingface
 
 # Optional Machine Learning Utilities (if using additional intent classification features)
-# scikit-learn
-# sentence-transformers
-# nltk
+scikit-learn
+sentence-transformers
+nltk
