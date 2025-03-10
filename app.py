@@ -57,7 +57,7 @@ st.markdown("""
 # Sidebar with numbered policies
 # In the sidebar section:
 with st.sidebar:
-    st.header("📜 UDST Policies")
+    st.header("📜 10 UDST Policies")
     # Numbered list with hyperlinks
     for i, policy_name in enumerate(policy_links.keys(), start=1):
         url = policy_links[policy_name]  # Get URL from your dictionary
@@ -69,7 +69,7 @@ with st.sidebar:
     st.caption("UDST Policy Chatbot")
 
 # Main interface
-st.markdown('<h1 class="global-title">📚 UDST POLICY ASSISTANT</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="global-title">📚 UDST POLICY ASSISTANT V1</h1>', unsafe_allow_html=True)
 
 # Chat history container
 with st.container():
