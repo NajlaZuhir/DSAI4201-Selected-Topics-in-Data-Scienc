@@ -168,22 +168,23 @@ def generate_response(user_query):
 
     client = Mistral(api_key=api_key)
     messages = [UserMessage(content=prompt)]
-
+    
     response = client.chat.complete(
         model="mistral-large-latest",
         messages=messages
     )
-
     answer = response.choices[0].message.content.strip()
 
-    # Append policy links (Ensure no duplicates)
+    # Append policy link if any policy keywords are detected
     if relevant_policies:
-            # Find policy with highest keyword match
-            best_match = max(relevant_policies, 
-                            key=lambda x: sum(word in user_query.lower() for word in x.lower().split()))
-            policy_links_html = f"🔗 **More Information:** [Read the full {best_match} here]({policy_links[best_match]})"
-            answer = f"{answer}\n\n{policy_links_html}"
-            return answer
+        # Find policy with highest keyword match
+        best_match = max(relevant_policies, 
+                         key=lambda x: sum(word in user_query.lower() for word in x.lower().split()))
+        policy_links_html = f"🔗 **More Information:** [Read the full {best_match} here]({policy_links[best_match]})"
+        answer = f"{answer}\n\n{policy_links_html}"
+    
+    return answer
+
 
 
 
